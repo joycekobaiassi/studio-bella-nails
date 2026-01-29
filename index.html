@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Studio Bella Nails</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+<h1>Studio Bella Nails</h1>
+<p>Unhas impecáveis, autoestima lá em cima 💖</p>
+
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+<section class="servicos" id="servicos">
+  <h2>Escolha seu serviço</h2>
+
+  <div class="cards">
+
+    <button class="card" onclick="selecionarServico('Manicure')">
+      <img src="imagens/manicure.jpg" alt="Manicure">
+      <span>Manicure</span>
+    </button>
+
+    <button class="card" onclick="selecionarServico('Pedicure')">
+      <img src="imagens/pedicure.jpg" alt="Pedicure">
+      <span>Pedicure</span>
+    </button>
+
+    <button class="card" onclick="selecionarServico('Alongamento')">
+      <img src="imagens/alongamento.jpg" alt="Alongamento">
+      <span>Alongamento</span>
+    </button>
+
+    <button class="card" onclick="selecionarServico('Nail Art')">
+      <img src="imagens/nailart.jpg" alt="Nail Art">
+      <span>Nail Art</span>
+    </button>
+
+  </div>
+</section>
+
+
+  <!-- TURNOS (ESCONDIDO) -->
+  <section class="agenda" id="agenda">
+    <h2 id="titulo-turno">Escolha o período</h2>
+
+    <div class="turnos">
+      <button onclick="agendar('manhã')">🌅 Manhã</button>
+      <button onclick="agendar('tarde')">🌤️ Tarde</button>
+      <button onclick="agendar('noite')">🌙 Noite</button>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+   <h2>Seu momento de se cuidar começa aqui ✨</h2>
+<p>Escolha o serviço ideal e agende em segundos pelo WhatsApp</p>
+
+    <a href="#servicos" class="btn">Agendar</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
